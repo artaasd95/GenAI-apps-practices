@@ -1,0 +1,66 @@
+{
+  "id": 1250807,
+  "name": "JOHNSON v. THE CYANE",
+  "name_abbreviation": "Johnson v. The Cyane",
+  "decision_date": "1870-04-21",
+  "docket_number": "",
+  "first_page": "1",
+  "last_page": "4",
+  "citations": [
+    {
+      "type": "official",
+      "cite": "1 Alaska Fed. 1"
+    },
+    {
+      "type": "parallel",
+      "cite": "Fed.Cas.No.7,381"
+    }
+  ],
+  "court": {
+    "name_abbreviation": "D. Cal.",
+    "id": 9442,
+    "name": "United States District Court for the District of California"
+  },
+  "jurisdiction": {
+    "id": 39,
+    "name_long": "United States",
+    "name": "U.S."
+  },
+  "cites_to": [],
+  "analysis": {
+    "cardinality": 377,
+    "char_count": 6427,
+    "ocr_confidence": 0.74,
+    "sha256": "dc38450ed670b3a043107632a67ef20cc66573b3c3ddcabe2af61e028e16bd7e",
+    "simhash": "1:107e3b0b47743ea5",
+    "word_count": 1167
+  },
+  "last_updated": "2023-07-14T22:28:04.286979+00:00",
+  "provenance": {
+    "date_added": "2019-08-29",
+    "source": "Harvard",
+    "batch": "2018"
+  },
+  "casebody": {
+    "judges": [],
+    "parties": [
+      "JOHNSON v. THE CYANE."
+    ],
+    "opinions": [
+      {
+        "text": "HOFFMAN, District Judge.\nThe facts in this case are not disputed, and the question presented to the court for decision is whether a seaman who had shipped for a voyage from this port to Ounalaska, in the territory of Alaska and back, had a right to refuse to perform his ordinary duty, on the ground that such duty was required of him on a Sunday, notwithstanding that the day in question was not, by the custom and usage of the port of Ounalaska, where the vessel lay, observed as a Sunday or holiday. It is not disputed that according to our calendar the day was Sunday, but according to the calendar in use in the late Russian possessions on this continent, the day previous had been observed as a Sunday or holiday.\nThe duty required of the seaman was to assist in discharging the cargo. The contract of the libellant was in the ordinary form of shipping articles. These articles contain no agreement for exeinption from labor on the part of the crew on Sunday, or any other sacred day. But it is admitted that by usage and custom no labor is on that day exacted of seamen, except such as is necessary for the navigation, and care of the ship, or such as may be rendered necessary by extraordinary circumstances.\nAdmitting, therefore, that this usage enters into, and forms a part of the contract, it is nevertheless apparent that from its very nature it can only give to the seaman the right to exemption from duty, subject to the discretion of the master. It is for the latter to determine what work is necessary, and when the labor of the crew or of any member of it is required.\nIn cases of emergency, growing out of disaster or danger to the ship, the necessity for the labor of the crew may be apparent to all. But there are many occasions when the necessity or expediency of requiring their services may depend on circumstances known only to the master, and as to the force of which he alone can judge.\nThe right of a seaman to rest on Sunday from the labors of the week cannot be more sacred than his right to rest during a portion of each twenty-four hours from the labors of the day; and yet the master\u2019s right to call all hands on deck, and, if in his judgment necessary, to deprive the crew of their watch below, cannot be questioned.\nIn all cases, obedience is the first duty of the seaman; and it is only when the command is clearly unlawful, or the duty exacted is plainly unreasonable and unnecessary, that a refusal to obey can be for a moment countenanced. In the case of Ulary v. The Washington, Fed.Cas.No. 14,323, Judge Hopkinson says: \u201cThe libellant contends that he was not bound to work on Sunday. There is no law for this position. The nature of the service requires that the men should-do so, and they must not be allowed to set themselves up as judges, and refuse to do their duty on such excuses.\u201d\nIn the case at bar, the order of the.master seems to have been reasonable and proper. By the usage of the port where the vessel lay, the day was a secular day, devoted to ordinary business and labor; and of this the seaman may be considered to have had notice when he entered into his contract. If by the law, or perhaps by the established usage of the port, labor had been prohibited on that day, he would have been entitled to the exemption. But certainly the master cannot be bound to accord to him all the privileges secured by the law or the usage of the port where the vessel is lying, and also all those allowed by the law and usage of the port from which she sailed. The contract for the seaman\u2019s service contemplates its performance in part at the port of Ounalaska, and as to that part it must be performed according to the law and usage there prevailing.\nIt did not distinctly appear at the hearing whether the previous day observed at Ounalaska as a holiday had been allowed to the seaman as a day of rest. It probably was; for the master would be unlikely to offend the sentiments of the inhabitants by a desecration of the day, and when all business and labor on shore were suspended, the discharge of the cargo by the crew would almost necessarily be interrupted.\nThe motives of the libellant in refusing to work are not shown. It does not appear what religion he professes, or even that he is a Christian. His refusal, therefore, cannot be attributed to scruples of conscience. He has chosen to stand on the purely legal ground that no work could be required of him on Sunday, except such as was clearly indispensable and necessary; and of this he constituted himself the judge.\nMy opinion is that the master had the right, under the circumstances, to require of him the performance of his duty. As the seaman, when the alternative was distinctly presented to him, chose to leave the vessel rather than go to work, he must be regarded as having abandoned the service, and he can have no claim for wages which by his own act he was prevented from earning. But, at the same time, I consider that the master\u2019s command to the seaman to go to work or to go ashore, was virtually an expulsion from the ship as a penalty or punishment for his refusal to do duty. Had the vessel been in a foreign port, this would have been clearly unlawful. It might even have exposed the master to a criminal prosecution. Ounalaska, though within our own territory, is remote and not much frequented. The seaman\u2019s refusal may have arisen from an honest mistake as to his rights and duties. I cannot affirm that conscientious scruples may not also have influenced him. His previous conduct had been good. He made no objection to performing his duty on any other day.\nThe master could have compelled him to work by appropriate punishment, or the threat of it, or he might have hired a man in his place, the expense of which, together with such deductions from his wages as the nature of his fault justified, could have been charged to the seaman. I think he had no right to expel him from the vessel, certainly he had none to inflict that mode of punishment which is only allowable in extreme cases, and to impose in addition a forfeiture of the wages already earned. I think, therefore, that the libellant is entitled to recover the wages due him at the time he left the vessel.",
+        "type": "majority",
+        "author": "HOFFMAN, District Judge."
+      }
+    ],
+    "attorneys": [
+      "Sullivan & Ellsworth, for libellant.",
+      "Pixley & Harrison, for claimant."
+    ],
+    "corrections": "",
+    "head_matter": "Fed.Cas.No.7,381\nJOHNSON v. THE CYANE.\nDistrict Court, D. California.\nApril 21, 1870.\nSullivan & Ellsworth, for libellant.\nPixley & Harrison, for claimant.\nReported by L. S. B. Sawyer, Esq., and' here reprinted by permission."
+  },
+  "file_name": "0001-01",
+  "first_page_order": 13,
+  "last_page_order": 16
+}
