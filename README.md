@@ -7,3 +7,6 @@ Each repository has its own readme.
    - **Title**: Pair Coding Assistant
    - **Description**: A project focused on developing and refining prompt engineering techniques for pair programming assistance.
 
+2. [Chat with code repository](./chat_with_codesnippet)
+   - **Title**: Agentic RAG for interacting with a code repository and explanation of codes
+   - **Description**: A project focused on making an assistant that can help understanding code.
