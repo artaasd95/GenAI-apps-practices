@@ -10,7 +10,7 @@ import os
 import uuid
 
 load_dotenv()
-
+openai_api_key = os.getenv('OPENAI_API_KEY')
 github_access_token = os.getenv("GITHUB_ACCESS_TOKEN")
 
 agent_storage = PgAgentStorage(

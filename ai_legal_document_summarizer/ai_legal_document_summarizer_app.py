@@ -1,3 +1,4 @@
+import os
 import faiss
 from fastapi import FastAPI, Request
 from fastapi.responses import JSONResponse
@@ -10,8 +11,11 @@ from langchain_community.vectorstores import FAISS
 from langchain_community.docstore.in_memory import InMemoryDocstore
 from langchain_openai import OpenAIEmbeddings
 from phi.model.openai import OpenAIChat
+from dotenv import load_dotenv
 
 
+load_dotenv()
+openai_api_key = os.getenv('OPENAI_API_KEY')
 app = FastAPI()
 
 loader = DirectoryLoader(
