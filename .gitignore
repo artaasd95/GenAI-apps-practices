@@ -181,3 +181,4 @@ pass
 *.pyc
 *.json
 !0001-01.json
+*.pdf
