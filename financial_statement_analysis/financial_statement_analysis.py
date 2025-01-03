@@ -4,7 +4,8 @@ from pydantic import BaseModel, Field
 import faiss
 from langchain_community.vectorstores import FAISS as CommunityFAISS
 from langchain_community.docstore.in_memory import InMemoryDocstore
-from langchain_openai import OpenAIChat, OpenAIEmbeddings
+from langchain_openai import OpenAIEmbeddings
+from phi.model.openai import OpenAIChat
 from phi.agent import Agent
 from phi.knowledge.langchain import LangChainKnowledgeBase
 from phi.tools.yfinance import YFinanceTools
@@ -75,6 +76,6 @@ async def ask_question(query_request: QueryRequest):
         final_query = query_request.query
     try:
         response = agent.run(final_query)
-        return JSONResponse({"response": response})
+        return JSONResponse({"response": response.to_dict().get('content')})
     except Exception as e:
         return JSONResponse({"error": str(e)}, status_code=500)

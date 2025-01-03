@@ -61,6 +61,6 @@ async def summarize_repository(query_request: QueryRequest):
             response = agent.run(f"Summarize the repository {repo_name} located at {repository_url} and explain its code.")
         else:
             response = agent.run(f"Summarize the repository {repo_name} and explain its code.")
-        return JSONResponse({"response": response})
+        return JSONResponse({"response": response.to_dict().get('content')})
     except Exception as e:
         return JSONResponse({"error": str(e)}, status_code=500)
