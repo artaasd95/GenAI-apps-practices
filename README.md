@@ -1,7 +1,3 @@
-Here’s the updated README including your HR Manager API project:
-
----
-
 ## ⚡ Generative AI Apps Practices
 
 Hello and welcome to the **Generative AI Apps Practices** repository! This repo is dedicated to simplifying various generative AI use cases and presenting them in a clear, structured manner. Each project has its own dedicated folder and README so you can dive into the code and explanations with ease. ✨
@@ -42,6 +38,22 @@ Hello and welcome to the **Generative AI Apps Practices** repository! This repo 
      - 📂 **Knowledge Base** integration for searching and retrieving resumes.  
      - 🔄 **Dynamic** responses tailored to HR scenarios, including skills matching and qualifications review.
 
+5. **[IELTS Writing Tutor API](./IELTS_writing_tutor)**  
+   - **Title**: Personalized IELTS Writing Feedback  
+   - **Description**: A FastAPI-based service offering personalized guidance, example essays, and tailored feedback for IELTS writing tasks.  
+   - **Highlights**:  
+     - 📝 **Guided Writing Assistance** with score-based suggestions.  
+     - 📚 **Knowledge Base** of sample essays integrated with PostgreSQL-backed vector database.  
+     - 🤖 **Custom Agent** for retrieving relevant examples and providing feedback.
+
+6. **[Product Recommender API](./product_recommender)**  
+   - **Title**: Personalized Product Recommendations  
+   - **Description**: A FastAPI-powered product recommender system that integrates LangChain, Milvus, and OpenAI GPT for dynamic and tailored suggestions.  
+   - **Highlights**:  
+     - 🔍 **Efficient Vector Search** using Milvus for product data retrieval.  
+     - 📊 **CSV Knowledge Base** dynamically loads and processes product information.  
+     - 🤖 **Agentic Recommendations** provide insightful product summaries based on user queries.
+
 ---
 
 ## 📝 Why This Repository?
@@ -52,8 +64,8 @@ Hello and welcome to the **Generative AI Apps Practices** repository! This repo 
 
 ### ✔️ Key Benefits
 
-- 🔧 **Practical Implementation**: Dive into functional code and ready-to-run examples.
-- 🎒 **Educational**: Each project clarifies why certain approaches or prompts are used.
+- 🔧 **Practical Implementation**: Dive into functional code and ready-to-run examples.  
+- 🎒 **Educational**: Each project clarifies why certain approaches or prompts are used.  
 - 💖 **Community-Oriented**: We encourage collaboration and feedback to evolve these practices.
 
 --- 

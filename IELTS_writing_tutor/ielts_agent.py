@@ -1,15 +1,10 @@
 import os
-import faiss
 from pydantic import BaseModel
 from fastapi import FastAPI
 from fastapi.responses import JSONResponse
-from phi.knowledge.langchain import LangChainKnowledgeBase
 from phi.agent import Agent
-from phi.tools.csv_tools import CsvTools
 from phi.knowledge.csv import CSVKnowledgeBase
-from phi.vectordb.pgvector import PgVector, SearchType
-from langchain_community.vectorstores import FAISS
-from langchain_community.docstore.in_memory import InMemoryDocstore
+from phi.vectordb.pgvector import PgVector
 from langchain_openai import OpenAIEmbeddings
 from phi.model.openai import OpenAIChat
 from dotenv import load_dotenv
@@ -27,7 +22,6 @@ ielts_writing = 'sample_data/ielts-writing-essays.csv'
 
 knowledge_base = CSVKnowledgeBase(
     path="sample_data",
-    # Table name: ai.csv_documents
     vector_db=PgVector(
         table_name="ielts_writings",
         db_url="postgresql+psycopg://ai:ai@localhost:5532/ai",
@@ -36,8 +30,8 @@ knowledge_base = CSVKnowledgeBase(
 
 
 agent = Agent(
-    name="Law document expert",
-    description="You are the expert analyzer of the law documents",
+    name="IELTS Writing tutor",
+    description="You are a tutor for IELTS writing task",
     model=OpenAIChat(id='gpt-4o-mini'),
     knowledge_base=knowledge_base,
     search_knowledge=True,
@@ -45,8 +39,9 @@ agent = Agent(
         "Greet only at the first time",
         "Get list of files",
         "Analyze the files",
-        "Search knowledgebase for the documents and retrieve the most similar.",
-        "summarize documents and return the summary of them",
+        "If the user wanted to write a text for an IELTS writing exam, write a proper text",
+        "you can find some similar writing answers to inspire by them",
+        "if the user wanted different styles and scores for writing search knowledge base and show the answers",
     ]
 )
 

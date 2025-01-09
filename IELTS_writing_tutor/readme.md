@@ -1,31 +1,31 @@
-# IELTS Writing Helping Agent API
+# IELTS Writing Tutor API
 
 ## Overview
 
-This project is a FastAPI-based service designed to assist users in improving their IELTS writing skills. It integrates a CSV-based knowledge base, a vector database, and a GPT model to provide personalized feedback, summaries, and insights on IELTS writing tasks.
+This project is a FastAPI-based service designed to help users prepare for IELTS writing tasks. The system combines a CSV knowledge base, a PostgreSQL-backed vector database, and OpenAI GPT to provide personalized guidance, example essays, and feedback on writing.
 
 ## Features
 
-- **Knowledge Base Integration**: Uses a CSV knowledge base containing sample IELTS writing essays, stored and managed with a PostgreSQL-backed vector database (`PgVector`).
-- **Embedding Models**: Leverages OpenAI embeddings for vector representation of essay data.
-- **Agent Functionality**: A custom agent, "IELTS Writing Helper," processes user queries, retrieves relevant examples, and provides tailored feedback or summaries.
-- **API Endpoint**: Accepts user queries via a `/query` endpoint and returns helpful responses in JSON format.
-- **Personalized Feedback**: Guides users on improving their writing skills based on existing examples and AI-generated suggestions.
+- **Knowledge Base Integration**: Uses a CSV knowledge base of sample IELTS writing essays, managed with a PostgreSQL-backed vector database (`PgVector`).
+- **Embedding Models**: Employs OpenAI embeddings for efficient vector representation of essay data.
+- **Agent Functionality**: A custom agent, "IELTS Writing Tutor," interacts with users, retrieves relevant essay examples, and provides tailored feedback and suggestions.
+- **API Endpoint**: Accepts user queries via a `/query` endpoint and responds in JSON format.
+- **Guided Writing Assistance**: Offers suggestions for writing styles, scores, and improvements, inspired by existing examples.
 
 ## Technologies Used
 
-- **FastAPI**: Framework for building the REST API.
-- **PgVector**: PostgreSQL extension for efficient vector similarity searches.
-- **Phi Framework**: Used for creating the custom agent and integrating knowledge bases and tools.
-- **LangChain**: For managing the knowledge base and vectorized documents.
-- **OpenAI GPT**: A GPT model (`gpt-4o-mini`) for natural language understanding and generation.
-- **FAISS**: For efficient vector-based similarity searches.
+- **FastAPI**: Framework for creating the REST API.
+- **PgVector**: PostgreSQL extension for vector similarity searches.
+- **Phi Framework**: Facilitates the creation of the custom agent and integration of knowledge bases.
+- **LangChain**: Manages knowledge base and embeddings.
+- **OpenAI GPT**: Utilizes the `gpt-4o-mini` model for natural language processing.
+- **Python Dotenv**: For managing environment variables.
 
 ## Directory Structure
 
 ```
 .
-├── app.py                   # Main API and agent logic
+├── app.py                   # Main API and agent implementation
 ├── sample_data/             # Directory containing sample IELTS writing essays
 ├── requirements.txt         # Python dependencies
 ├── .env                     # Environment variables (e.g., OpenAI API key)
@@ -35,8 +35,8 @@ This project is a FastAPI-based service designed to assist users in improving th
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-repo/ielts-writing-helper-api.git
-   cd ielts-writing-helper-api
+   git clone https://github.com/your-repo/ielts-writing-tutor-api.git
+   cd ielts-writing-tutor-api
    ```
 
 2. **Set up a Python virtual environment**:
@@ -65,35 +65,34 @@ This project is a FastAPI-based service designed to assist users in improving th
    ```
 
 2. **Query the Agent**:
-   Use the `/query` endpoint to interact with the agent:
+   Interact with the agent using the `/query` endpoint:
    - **Request Format**:
      ```json
      {
-       "query": "Provide tips for improving my essay conclusion."
+       "query": "Provide examples of band 7 essays on environmental topics."
      }
      ```
    - **Response Format**:
      ```json
      {
-       "response": "Your conclusion should restate your main points succinctly. Avoid introducing new ideas and ensure clarity."
+       "response": "Here is an example of a band 7 essay on environmental protection: ..."
      }
      ```
 
 3. **Customize Data**:
-   Add or update IELTS writing essays in the `sample_data/` directory. Ensure proper CSV formatting for seamless integration.
+   Add or update IELTS writing examples in the `sample_data/` directory. Ensure the file is a properly formatted CSV.
 
 ## Configuration
 
-- **Knowledge Base Path**: Update the `sample_data/` directory in the code to point to your dataset.
-- **PgVector Database**: Modify database configurations (e.g., table name, database URL) as needed.
-- **Embedding Model**: Replace `OpenAIEmbeddings()` if using a different embedding model.
+- **Knowledge Base Path**: Update the path in `CSVKnowledgeBase` to point to your custom dataset.
+- **Database Configuration**: Modify database connection details (e.g., table name, database URL) as required.
+- **Model and Embeddings**: Adjust the `OpenAIChat` and `OpenAIEmbeddings` configurations if using alternative models or embeddings.
 
 ## Dependencies
 
 - `faiss`
 - `fastapi`
 - `phi`
-- `langchain_community`
 - `langchain_openai`
 - `uvicorn`
 - `python-dotenv`
@@ -103,3 +102,8 @@ Install all dependencies with:
 pip install -r requirements.txt
 ```
 
+## Additional Notes
+
+- Ensure the PostgreSQL database with `PgVector` is set up and accessible.
+- Use the agent's built-in instructions to customize user interactions further.
+- This project is extensible for additional features, such as support for other writing tasks or exam formats.
